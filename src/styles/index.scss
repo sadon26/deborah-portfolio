@@ -1,0 +1,30 @@
+@import url("https://fonts.cdnfonts.com/css/questa-sans");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "animation";
+
+body {
+  color: theme("colors.primary");
+  line-height: 27px;
+  font-family: "Questa Sans", sans-serif;
+}
+
+.bg-blue-primary {
+  background: linear-gradient(90deg, #3a3589 0%, #130b74 80%);
+}
+.bg-yellow-layout-bg {
+  background: linear-gradient(180deg, #faf8eb 30%, #fff 70%);
+}
+
+.animated-div {
+  transform: translateY(100%);
+  // opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slide-up {
+  transform: translateY(0);
+  opacity: 1;
+}
