@@ -13,7 +13,14 @@ const Footer = () => {
         <img src={Deborah} alt="deborah-logo" className="h-full" />
       </div>
       <p className="md:text-[18px]">
-        Beautifully created by <span className="font-bold">Dayo Ashaolu</span>
+        Beautifully created by{" "}
+        <a
+          target="_blank"
+          href="https://dayoashaolu.netlify.app"
+          className="font-bold cursor-pointer"
+        >
+          Dayo Ashaolu
+        </a>
       </p>
       <div className="flex items-center gap-4">
         <div className="md:w-10 w-6 md:h-10 h-6">

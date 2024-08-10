@@ -70,7 +70,7 @@ const Home = () => {
                 A user-centric Product Designer who is passionate about
                 empowering people by giving them a seamless user experience as
                 they interact with intuitive digital products I create. I have
-                over 2 year of experience in UI/UX design for B2Bs and B2Cs
+                over 2 years of experience in UI/UX design for B2Bs and B2Cs
                 across iOS, android and web experiences. I am a huge advocate of
                 inclusive design.
               </motion.p>
