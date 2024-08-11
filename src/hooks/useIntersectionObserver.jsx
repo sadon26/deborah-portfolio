@@ -14,12 +14,12 @@ const useIntersectionObserver = ({ refs, updateElement, options = {} }) => {
     let observer = new IntersectionObserver(intersectionCallback, options);
 
     Array.from(refs?.current)?.forEach((el) => {
-      observer.observe(el);
+      el && observer.observe(el);
     });
 
     return () => {
       Array.from(refs?.current)?.forEach((el) => {
-        observer?.unobserve(el);
+        el && observer?.unobserve(el);
       });
     };
   }, [refs.current, intersectionCallback]);

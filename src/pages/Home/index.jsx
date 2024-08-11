@@ -34,7 +34,7 @@ const Home = () => {
     <HomePageLayout>
       <>
         <div className="px-4 md:px-20 mt-8 md:mt-[192px]">
-          <div className="flex flex-col gap-6 md:flex-row justify-between items-center">
+          <div className="flex flex-col gap-6 md:flex-row mt-16 md:mt-0 justify-between items-center">
             <div className="basis-[40%] flex items-center md:items-start flex-col gap-3 md:gap-5">
               <motion.h5
                 className="text-[16px] md:text-[18px] text-secondary"

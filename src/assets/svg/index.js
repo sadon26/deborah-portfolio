@@ -27,6 +27,7 @@ import ProtopieImage from "../svg/protopie.svg";
 import LinkedInImage from "../svg/linked-in.svg";
 import DribbleImage from "../svg/dribble.svg";
 import BehanceImage from "../svg/behance.svg";
+import HamburgerOpen from "../svg/hamburger-open.svg";
 
 export {
   Deborah,
@@ -58,4 +59,5 @@ export {
   LinkedInImage,
   DribbleImage,
   BehanceImage,
+  HamburgerOpen,
 };

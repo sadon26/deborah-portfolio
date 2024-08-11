@@ -22,6 +22,7 @@ export default {
         heading: "#14181A",
         neutral: {
           "-50": "#E4E6E7",
+          "-100": "#D5D7D9",
         },
       },
     },

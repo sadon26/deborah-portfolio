@@ -28,7 +28,7 @@ const Project = ({ projects, title, description }) => {
     <>
       <div
         ref={(el) => intersectionRefs.current.push(el)}
-        className="flex flex-col gap-1 md:gap-4 justify-center sticky top-1 md:top-4 items-center mb-8 p-4"
+        className="flex flex-col gap-1 md:gap-4 justify-center sticky top-12 md:top-20 items-center mb-8 p-4"
       >
         <h5 className="text-secondary text-[14px] md:text-[24px]">{title}</h5>
         <p className="text-heading text-[24px] md:text-[48px]">{description}</p>
@@ -53,7 +53,7 @@ const Project = ({ projects, title, description }) => {
               key={index}
               ref={(el) => intersectionRefs.current.push(el)}
               className={classNames(
-                "rounded-[20px] sticky top-[90px] md:top-40 min-h-[500px] md:min-h-[600px]",
+                "rounded-[20px] sticky top-[140px] md:top-48 min-h-[500px] md:min-h-[600px]",
                 wrapperClassName
               )}
             >
