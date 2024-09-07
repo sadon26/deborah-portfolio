@@ -48,6 +48,12 @@ import PayrepMore from "../svg/payrep-more.svg";
 import ClearlineMore from "../svg/clearline-more.svg";
 import RightArrow from "../svg/right-arrow.svg";
 import RightArrowBlue from "../svg/right-arrow-blue.svg";
+import Problem from "../svg/problem.svg";
+import Client from "../svg/client.svg";
+import Objective from "../svg/objective.svg";
+import Location from "../svg/location.svg";
+import Role from "../svg/role.svg";
+import Duration from "../svg/duration.svg";
 
 export {
   Deborah,
@@ -100,4 +106,10 @@ export {
   ClearlineMore,
   RightArrow,
   RightArrowBlue,
+  Problem,
+  Client,
+  Objective,
+  Location,
+  Role,
+  Duration,
 };

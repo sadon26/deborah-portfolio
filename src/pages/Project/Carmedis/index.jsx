@@ -26,6 +26,14 @@ import { designStrategies } from "@/utils";
 import { AboutDeborah, MyDesignFlair } from "../../Home/MyDesignFlair";
 import LetsWorkTogether from "../../Home/LetsWorkTogether";
 import { motion } from "framer-motion";
+import {
+  Client,
+  Duration,
+  Location,
+  Objective,
+  Problem,
+  Role,
+} from "../../../assets/svg";
 
 const Carmedis = () => {
   return (
@@ -74,7 +82,13 @@ const Carmedis = () => {
           <div className="grid grid-cols-12 md:gap-[124px] gap-8 pb-12 md:pb-[124px]">
             <div className="md:col-span-7 col-span-full flex flex-col gap-6">
               <div className="flex gap-2">
-                <div className="self-start">{/* icon */}</div>
+                <div className="self-start w-8 h-8 shrink-0">
+                  <img
+                    src={Problem}
+                    alt="problem-icon"
+                    className="w-full h-full"
+                  />
+                </div>
                 <div>
                   <h5 className="font-bold md:text-[24px] text-[18px]">
                     THE PROBLEM
@@ -92,7 +106,15 @@ const Carmedis = () => {
                 </div>
               </div>
               <div className="flex gap-2">
-                <div className="self-start">{/* icon */}</div>
+                <div className="self-start">
+                  <div className="self-start w-8 h-8 shrink-0">
+                    <img
+                      src={Objective}
+                      alt="objective-icon"
+                      className="w-full h-full"
+                    />
+                  </div>
+                </div>
                 <div>
                   <h5 className="font-bold md:text-[24px] text-[18px]">
                     OBJECTIVE
@@ -114,21 +136,53 @@ const Carmedis = () => {
               </div>
             </div>
             <div className="md:col-span-5 col-span-full flex flex-col gap-6">
-              <div>
-                <h5 className="font-bold">LOCATION</h5>
-                <p>Lagos, (Nigeria)</p>
+              <div className="flex gap-2">
+                <div className="self-start w-8 h-8 shrink-0">
+                  <img
+                    src={Location}
+                    alt="location-icon"
+                    className="w-full h-full"
+                  />
+                </div>
+                <div>
+                  <h5 className="font-bold">LOCATION</h5>
+                  <p>Lagos, (Nigeria)</p>
+                </div>
               </div>
-              <div>
-                <h5 className="font-bold">CLIENT</h5>
-                <p>Carmedis</p>
+              <div className="flex gap-2">
+                <div className="self-start w-8 h-8 shrink-0">
+                  <img
+                    src={Client}
+                    alt="client-icon"
+                    className="w-full h-full"
+                  />
+                </div>
+                <div>
+                  <h5 className="font-bold">CLIENT</h5>
+                  <p>Carmedis</p>
+                </div>
               </div>
-              <div>
-                <h5 className="font-bold">MY ROLE</h5>
-                <p>Product Designer</p>
+              <div className="flex gap-2">
+                <div className="self-start w-8 h-8 shrink-0">
+                  <img src={Role} alt="role-icon" className="w-full h-full" />
+                </div>
+                <div>
+                  <h5 className="font-bold">MY ROLE</h5>
+                  <p>Product Designer</p>
+                </div>
               </div>
-              <div>
-                <h5 className="font-bold">DURATION</h5>
-                <p>April 2023 - Feb 2024</p>
+              <div className="flex gap-2">
+                <div className="self-start w-8 h-8 shrink-0">
+                  <img
+                    src={Duration}
+                    alt="client-icon"
+                    className="w-full h-full"
+                  />
+                </div>
+                <div>
+                  <h5 className="font-bold">DURATION</h5>
+                  <p>April 2023 - Feb 2024</p>
+                </div>
               </div>
             </div>
           </div>
