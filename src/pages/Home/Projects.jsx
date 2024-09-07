@@ -6,6 +6,7 @@ import {
   PayrepImage,
 } from "../../assets/svg";
 import Project from "./Project";
+import { PROJECT_ROUTE } from "@/constants";
 
 const Projects = () => {
   const projects = {
@@ -22,6 +23,7 @@ const Projects = () => {
           textClassName: "flex flex-col gap-1 md:gap-4",
           src: CarmedisImage,
           buttonClassName: "border-[#0E4BA3] text-[#0E4BA3]",
+          to: PROJECT_ROUTE("carmedis"),
         },
         {
           title: "PAYREP",
@@ -32,6 +34,7 @@ const Projects = () => {
           textClassName: "flex flex-col gap-1 md:gap-4 w-full",
           src: PayrepImage,
           buttonClassName: "border-[#FEB800] text-[#FEB800]",
+          to: PROJECT_ROUTE("payrep"),
         },
         {
           title: "CLEARLINE",
@@ -42,6 +45,7 @@ const Projects = () => {
           textClassName: "flex flex-col gap-1 md:gap-4",
           src: ClearlineImage,
           buttonClassName: "border-[#018BE9] text-[#018BE9]",
+          to: PROJECT_ROUTE("clearline"),
         },
       ],
     },

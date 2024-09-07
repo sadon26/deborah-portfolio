@@ -15,6 +15,8 @@ export default {
         yellow: {
           light: "#FDFCF6",
           layout: "#FAF8EB",
+          "light-100": "#FEB800",
+          "light-200": "#FFF1CC",
         },
         header: {
           two: "#14181A",
@@ -24,6 +26,14 @@ export default {
           "-50": "#E4E6E7",
           "-100": "#D5D7D9",
         },
+        blue: {
+          100: "#0E4BA3",
+          200: "#018BE9",
+          300: "#CCEAFF",
+        },
+      },
+      gridTemplateColumns: {
+        13: "repeat(13, minmax(0, 1fr))",
       },
     },
   },

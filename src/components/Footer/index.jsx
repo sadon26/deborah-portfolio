@@ -5,11 +5,18 @@ import {
   DribbleImage,
   LinkedInImage,
 } from "../../assets/svg";
+import { useNavigate } from "react-router-dom";
+import { HOME_ROUTE } from "@/constants";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="mx-4 md:mx-20 my-6 md:my-[35px] flex flex-col gap-3 md:flex-row items-center justify-between">
-      <div className="h-6 md:h-8">
+    <footer className="px-4 md:px-20 py-6 md:py-[35px] flex flex-col gap-3 md:flex-row items-center justify-between bg-white z-[2] border-t-[1px]">
+      <div
+        className="h-6 md:h-8 cursor-pointer"
+        onClick={() => navigate(HOME_ROUTE)}
+      >
         <img src={Deborah} alt="deborah-logo" className="h-full" />
       </div>
       <p className="md:text-[18px]">
@@ -45,7 +52,7 @@ const Footer = () => {
           />
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

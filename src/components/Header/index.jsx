@@ -3,6 +3,8 @@ import { Deborah, HamburgerOpen } from "@/assets/svg";
 import { motion } from "framer-motion";
 import { Button } from "@/components";
 import classNames from "classnames";
+import { useNavigate } from "react-router-dom";
+import { HOME_ROUTE } from "@/constants";
 
 const links = [
   { label: "Projects" },
@@ -11,7 +13,9 @@ const links = [
   { label: "Let's chat" },
 ];
 
-const Header = () => {
+const Header = ({ theme }) => {
+  const navigate = useNavigate();
+
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const toggleMobileNav = () => setMobileNavOpen((prev) => !prev);
@@ -29,8 +33,11 @@ const Header = () => {
   }, [mobileNavOpen]);
 
   return (
-    <motion.div
-      className="fixed top-0 w-full z-[3] py-4 md:py-6 px-4 md:px-20 border-b-[1px] border-b-gray-light flex justify-between bg-yellow-light"
+    <motion.header
+      className={classNames(
+        "fixed top-0 w-full z-[3] py-4 md:py-6 px-4 md:px-20 border-b-[1px] border-b-gray-light flex justify-between bg-yellow-light",
+        [theme]
+      )}
       initial={{ y: -90 }}
       animate={{ y: 0 }}
       transition={{
@@ -38,7 +45,10 @@ const Header = () => {
         duration: 0.5,
       }}
     >
-      <div className="h-6 md:h-8">
+      <div
+        className="h-6 md:h-8 cursor-pointer"
+        onClick={() => navigate(HOME_ROUTE)}
+      >
         <img src={Deborah} alt="deborah-logo" className="h-full" />
       </div>
       <div className="hidden md:flex items-center gap-6">
@@ -139,7 +149,7 @@ const Header = () => {
           ))}
         </div>
       </motion.div>
-    </motion.div>
+    </motion.header>
   );
 };
 

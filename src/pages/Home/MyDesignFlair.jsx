@@ -1,5 +1,5 @@
 import React from "react";
-import { TickImage } from "../../assets/svg";
+import { Deborah, DeborahAvatarBig, TickImage } from "../../assets/svg";
 
 const flairs = [
   "I prioritize empathy",
@@ -21,6 +21,24 @@ export const MyDesignFlair = () => {
             <span>{flair}</span>
           </div>
         ))}
+      </div>
+    </div>
+  );
+};
+
+export const AboutDeborah = () => {
+  return (
+    <div className="p-6 rounded-[16px] border-[1px] border-gray-light h-full flex justify-between items-center">
+      <div>
+        <h6 className="text-[18px] font-bold md:mb-4 mb-2">About Deborah</h6>
+        <p>
+          Meet the creative mind behind <br /> the screen
+        </p>
+      </div>
+      <div className="flex flex-col gap-4">
+        <div className="w-[100px] md:w-[140px]">
+          <img src={DeborahAvatarBig} className="w-full" alt="deborah-image" />
+        </div>
       </div>
     </div>
   );

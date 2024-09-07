@@ -2,8 +2,11 @@ import classNames from "classnames";
 import React, { useRef } from "react";
 import { Button } from "@/components";
 import { useIntersectionObserver } from "@/hooks";
+import { useNavigate } from "react-router-dom";
 
 const Project = ({ projects, title, description }) => {
+  const navigate = useNavigate();
+
   const intersectionRefs = useRef([]);
 
   useIntersectionObserver({
@@ -46,6 +49,7 @@ const Project = ({ projects, title, description }) => {
               description,
               buttonText = "View Case Study",
               buttonClassName,
+              to,
             },
             index
           ) => (
@@ -68,6 +72,7 @@ const Project = ({ projects, title, description }) => {
                       "rounded-[100px] bg-transparent border py-1 px-3",
                       buttonClassName
                     )}
+                    onClick={() => navigate(to)}
                   >
                     {buttonText}
                   </Button>
