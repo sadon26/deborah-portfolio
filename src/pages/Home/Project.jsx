@@ -86,6 +86,7 @@ const Project = ({ projects, title, description }) => {
                       "rounded-[100px] bg-transparent border py-1 px-3 w-full mt-8",
                       buttonClassName
                     )}
+                    onClick={() => navigate(to)}
                   >
                     {buttonText}
                   </Button>
