@@ -49,7 +49,7 @@ const Carmedis = () => {
         delay: 0.5,
       }}
     >
-      <div className="px-4 md:px-20 relative pt-[57px] md:pt-[89px]  h-full">
+      <div className="px-4 md:px-20 relative pt-[7px] md:pt-[89px]  h-full">
         <div className="flex justify-center h-[600px] pt-[84px] pb-10 md:mb-[124px] px-4">
           <img
             className="md:flex hidden"
@@ -79,10 +79,10 @@ const Carmedis = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-12 md:gap-[124px] gap-8 pb-12 md:pb-[124px]">
+          <div className="grid grid-cols-12 md:gap-[124px] md:gap-x-8 gap-y-8 pb-12 md:pb-[124px]">
             <div className="md:col-span-7 col-span-full flex flex-col gap-6">
-              <div className="flex gap-2">
-                <div className="self-start w-8 h-8 shrink-0">
+              <div className="flex flex-col md:flex-row gap-2">
+                <div className="self-start w-8 h-8">
                   <img
                     src={Problem}
                     alt="problem-icon"
@@ -105,16 +105,15 @@ const Carmedis = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-2">
-                <div className="self-start">
-                  <div className="self-start w-8 h-8 shrink-0">
-                    <img
-                      src={Objective}
-                      alt="objective-icon"
-                      className="w-full h-full"
-                    />
-                  </div>
+              <div className="flex flex-col md:flex-row gap-2">
+                <div className="self-start w-8 h-8">
+                  <img
+                    src={Objective}
+                    alt="objective-icon"
+                    className="w-full h-full"
+                  />
                 </div>
+
                 <div>
                   <h5 className="font-bold md:text-[24px] text-[18px]">
                     OBJECTIVE
@@ -547,8 +546,8 @@ const Carmedis = () => {
               See More Projects
             </h6>
 
-            <div className="grid grid-cols-12 gap-9">
-              <div className="col-span-full md:col-span-6 rounded-[16px] bg-yellow-light-100 bg-opacity-15 p-10 hover:scale-[0.95] transition-all">
+            <div className="grid grid-cols-12 md:gap-9 gap-6">
+              <div className="col-span-full md:col-span-6 rounded-[16px] bg-yellow-light-100 bg-opacity-15 p-4 md:p-10 hover:scale-[0.95] transition-all">
                 <div className="flex justify-center">
                   <img src={PayrepMore} alt="payrep-more" />
                 </div>
@@ -562,7 +561,7 @@ const Carmedis = () => {
                   <p className="font-semibold">PayRep- A financial app</p>
                 </div>
               </div>
-              <div className="col-span-full md:col-span-6 rounded-[16px] bg-blue-200 bg-opacity-15 p-10 hover:scale-[0.95] transition-all">
+              <div className="col-span-full md:col-span-6 rounded-[16px] bg-blue-200 bg-opacity-15 p-4 md:p-10 hover:scale-[0.95] transition-all">
                 <div className="flex justify-center">
                   <img src={ClearlineMore} alt="clearline-more" />
                 </div>
