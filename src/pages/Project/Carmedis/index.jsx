@@ -558,7 +558,7 @@ const Carmedis = () => {
                       <img src={RightArrow} alt="right-arrow" />
                     </div>
                   </div>
-                  <p className="font-semibold">PayRep- A financial app</p>
+                  <p className="font-semibold">PayRep - A financial app</p>
                 </div>
               </div>
               <div className="col-span-full md:col-span-6 rounded-[16px] bg-blue-200 bg-opacity-15 p-4 md:p-10 hover:scale-[0.95] transition-all">
@@ -573,7 +573,7 @@ const Carmedis = () => {
                     </div>
                   </div>
                   <p className="font-semibold">
-                    Clearline- A health maintenance organization app
+                    Clearline - A health maintenance organization app
                   </p>
                 </div>
               </div>

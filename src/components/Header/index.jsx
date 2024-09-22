@@ -55,12 +55,17 @@ const Header = ({ theme }) => {
         {links.map(({ label }) => (
           <button
             key={label}
-            className="text-[18px] hover:text-primary-base transition-all duration-300"
+            className={classNames(
+              "text-[18px] hover:text-primary-base transition-all duration-300",
+              {
+                "md:hidden": label === "Let's chat",
+              }
+            )}
           >
             {label}
           </button>
         ))}
-        <Button>Let's chat</Button>
+        <Button className="hidden md:inline-block">Let's chat</Button>
       </div>
       <button
         className="md:hidden flex cursor-pointer"

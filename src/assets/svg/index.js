@@ -54,6 +54,11 @@ import Objective from "../svg/objective.svg";
 import Location from "../svg/location.svg";
 import Role from "../svg/role.svg";
 import Duration from "../svg/duration.svg";
+import PayrepLanding from "../svg/payrep-landing.svg";
+import PayrepLogo from "../svg/payrep-logo.svg";
+import PayrepLogoWithText from "../svg/payep-logo-with-text.svg";
+import PayrepPhoneMockup from "../svg/payrep-phone-mockup.svg";
+import PayrepPhoneMockupTwo from "../svg/payrep-phone-mockup-2.svg";
 
 export {
   Deborah,
@@ -112,4 +117,9 @@ export {
   Location,
   Role,
   Duration,
+  PayrepLanding,
+  PayrepLogo,
+  PayrepLogoWithText,
+  PayrepPhoneMockup,
+  PayrepPhoneMockupTwo,
 };

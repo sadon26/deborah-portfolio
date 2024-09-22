@@ -2,6 +2,7 @@ import React, { useCallback } from "react";
 import { useLocation } from "react-router-dom";
 import { HomePageLayout } from "@/layouts";
 import Carmedis from "./Carmedis";
+import Payrep from "./Payrep";
 
 const Project = () => {
   const location = useLocation();
@@ -12,6 +13,12 @@ const Project = () => {
         return {
           theme: "!bg-[#E1E9F4] bg-opacity-30",
           component: Carmedis,
+          className: "bg-blue-layout-bg important",
+        };
+      case "/projects/payrep":
+        return {
+          theme: "!bg-[#E1E9F4] bg-opacity-30",
+          component: Payrep,
           className: "bg-blue-layout-bg important",
         };
 
