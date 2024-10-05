@@ -17,9 +17,9 @@ const Project = () => {
         };
       case "/projects/payrep":
         return {
-          theme: "!bg-[#E1E9F4] bg-opacity-30",
+          theme: "!bg-white",
           component: Payrep,
-          className: "bg-blue-layout-bg important",
+          className: "bg-white important",
         };
 
       default:

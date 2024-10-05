@@ -13,6 +13,19 @@ import {
   PayrepPhoneMockup,
   PayrepPhoneMockupTwo,
 } from "@/assets/svg";
+import {
+  PainPoints,
+  PayrepPrevEight,
+  PayrepPrevFive,
+  PayrepPrevFour,
+  PayrepPrevNine,
+  PayrepPrevOne,
+  PayrepPrevSeven,
+  PayrepPrevSix,
+  PayrepPrevTen,
+  PayrepPrevThree,
+  PayrepPrevTwo,
+} from "../../../assets/svg";
 
 const Payrep = () => {
   return (
@@ -216,6 +229,132 @@ const Payrep = () => {
                 active users, Task completion rate
               </li>
             </ul>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 pb-12 md:pb-[124px]">
+          <h3 className="text-header-two text-[24px] md:mb-6 mb-3 md:text-[40px]">
+            Some Custmer Reviews (Before)
+          </h3>
+
+          <div className="flex flex-col gap-6">
+            <div className="info-box info-box__primary">
+              Payrep needs to go back to the drawing board. The functionality of
+              the app is zero. A simple sign up to convert me from being an
+              acquired user to an activated user was impossible. Inputed my kyc-
+              NIN and that was it- error message, nothing else was workin
+            </div>
+            <div className="info-box info-box__orange">
+              Please how can i speak with customers care, please the transaction
+              I did was successful and the person didn't receive credit alert.
+            </div>
+            <div className="info-box info-box__success">
+              your app is so frustrating how can I in one minute get otp to rest
+              my app and once I do that I still can't get access to my dashboard
+              how do you expect me to log in when it keep telling me wrong
+              information yet it same information I have used in the last 2weeks
+              pls fix this problem can't get number to reach you guys
+            </div>
+            <div className="info-box info-box__beige">
+              You guys need to work on your app it gives somebody like me
+              stress. The app is very poor 😢
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 pb-12 md:pb-[124px]">
+          <h3 className="mb-4 text-heading font-bold text-[24px] md:text-[40px]">
+            Previous UI
+          </h3>
+          <h5 className="text-secondary">
+            Analysing the interface to pin-point the bad flow{" "}
+          </h5>
+
+          <ul className="py-2 list-disc pl-4 text-primary flex flex-col gap-2">
+            <li>
+              The designs didn&apos;t depict the companies brand in terms of
+              colors
+            </li>
+            <li>The onboarding flow is scattered</li>
+            <li>
+              The app is not user friendly and the UI isn&apos;t appealing
+            </li>
+          </ul>
+        </div>
+
+        <div className="bg-[#0F1113] px-4 py-8 md:py-6 md:px-[70px]">
+          <div className="flex justify-between gap-3 mb-6 md:mb-[18px]">
+            <div>
+              <img src={PayrepPrevOne} alt="payrep-prev-UI-1" />
+            </div>
+            <div>
+              <img src={PayrepPrevTwo} alt="payrep-prev-UI-2" />
+            </div>
+            <div>
+              <img src={PayrepPrevThree} alt="payrep-prev-UI-3" />
+            </div>
+            <div>
+              <img src={PayrepPrevFour} alt="payrep-prev-UI-4" />
+            </div>
+            <div>
+              <img src={PayrepPrevFive} alt="payrep-prev-UI-5" />
+            </div>
+          </div>
+          <div className="flex justify-between gap-3 mb-4">
+            <div>
+              <img src={PayrepPrevSix} alt="payrep-prev-UI-6" />
+            </div>
+            <div>
+              <img src={PayrepPrevSeven} alt="payrep-prev-UI-7" />
+            </div>
+            <div>
+              <img src={PayrepPrevEight} alt="payrep-prev-UI-8" />
+            </div>
+            <div>
+              <img src={PayrepPrevNine} alt="payrep-prev-UI-9" />
+            </div>
+            <div>
+              <img src={PayrepPrevTen} alt="payrep-prev-UI-10" />
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 py-12 md:py-[124px]">
+          <h3 className="mb-3 md:mb-10 text-heading font-bold text-[24px] md:text-[40px]">
+            Key Pain Points
+          </h3>
+
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="md:min-w-[300px]">
+              <img src={PainPoints} alt="pain-points" />
+            </div>
+            <div className="order-[-1] md:order-1">
+              <ul className="py-2 list-disc pl-4 text-primary flex flex-col gap-2">
+                <li>
+                  <span className="font-bold">Brand Color Consistency:</span>{" "}
+                  Users feels disconnected or disoriented from the app's user
+                  interface because it lacks the brand's color scheme.
+                </li>
+                <li>
+                  <span className="font-bold">Poor Interaction Design:</span>{" "}
+                  Bad interaction design can lead to frustration and confusion
+                  for users.{" "}
+                </li>
+                <li>
+                  <span className="font-bold">
+                    Confusing Customer Support Communication:
+                  </span>{" "}
+                  Users have difficulty communicating with customer support
+                  through the app which leads to frustration and
+                  dissatisfaction.
+                </li>
+                <li>
+                  <span className="font-bold">Recurring User Complaints:</span>{" "}
+                  Users consistently complain about specific issues or encounter
+                  the same problems repeatedly.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

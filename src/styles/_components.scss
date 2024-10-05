@@ -1,0 +1,41 @@
+@mixin infoBoxDot($color) {
+  &:after {
+    position: absolute;
+    content: "";
+    left: -28px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: $color;
+    border-radius: 50%;
+  }
+}
+
+.info-box {
+  margin-left: 28px;
+  border-radius: 4px;
+  padding: 24px;
+  position: relative;
+  color: theme("colors.primary");
+
+  &__primary {
+    background-color: theme("colors.primary-50");
+    @include infoBoxDot(theme("colors.primary-base"));
+  }
+
+  &__orange {
+    background-color: #fce3e3;
+    @include infoBoxDot(#ef4444);
+  }
+
+  &__success {
+    background-color: theme("colors.success-50");
+    @include infoBoxDot(theme("colors.success-base"));
+  }
+
+  &__beige {
+    background-color: #f9e9e7;
+    @include infoBoxDot(#cc5648);
+  }
+}

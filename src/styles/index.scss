@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "animation";
+@import "components";
 
 body {
   color: theme("colors.primary");

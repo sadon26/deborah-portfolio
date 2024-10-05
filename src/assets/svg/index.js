@@ -59,6 +59,17 @@ import PayrepLogo from "../svg/payrep-logo.svg";
 import PayrepLogoWithText from "../svg/payep-logo-with-text.svg";
 import PayrepPhoneMockup from "../svg/payrep-phone-mockup.svg";
 import PayrepPhoneMockupTwo from "../svg/payrep-phone-mockup-2.svg";
+import PayrepPrevOne from "../svg/payrep-prev-1.svg";
+import PayrepPrevTwo from "../svg/payrep-prev-2.svg";
+import PayrepPrevThree from "../svg/payrep-prev-3.svg";
+import PayrepPrevFour from "../svg/payrep-prev-4.svg";
+import PayrepPrevFive from "../svg/payrep-prev-5.svg";
+import PayrepPrevSix from "../svg/payrep-prev-6.svg";
+import PayrepPrevSeven from "../svg/payrep-prev-7.svg";
+import PayrepPrevEight from "../svg/payrep-prev-8.svg";
+import PayrepPrevNine from "../svg/payrep-prev-9.svg";
+import PayrepPrevTen from "../svg/payrep-prev-10.svg";
+import PainPoints from "../svg/pain-points.svg";
 
 export {
   Deborah,
@@ -122,4 +133,15 @@ export {
   PayrepLogoWithText,
   PayrepPhoneMockup,
   PayrepPhoneMockupTwo,
+  PayrepPrevOne,
+  PayrepPrevTwo,
+  PayrepPrevThree,
+  PayrepPrevFour,
+  PayrepPrevFive,
+  PayrepPrevSix,
+  PayrepPrevSeven,
+  PayrepPrevEight,
+  PayrepPrevNine,
+  PayrepPrevTen,
+  PainPoints,
 };
