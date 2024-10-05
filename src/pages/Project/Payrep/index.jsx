@@ -43,7 +43,7 @@ const Payrep = () => {
         delay: 0.5,
       }}
     >
-      <div className="relative pt-[57px] md:pt-[89px]  h-full">
+      <div className="relative pt-[57px] md:pt-[89px] h-full">
         <div className="px-4 md:px-20 pt-8 md:pt-[120px] flex justify-between flex-col md:flex-row gap-8 bg-header-two">
           <div className="md:pt-10 flex flex-col items-center md:items-start text-white">
             <div className="mb-3 md:mb-6 w-12 md:w-[61px]">

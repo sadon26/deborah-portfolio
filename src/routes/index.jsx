@@ -1,12 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Home, Project } from "../pages";
+import { AboutMe, Home, Project } from "../pages";
 
 const Router = () => {
   return (
     <Routes>
       <Route index element={<Home />} />
       <Route path="/projects/:name" element={<Project />} />
+      <Route path="/about-me" element={<AboutMe />} />
     </Routes>
   );
 };

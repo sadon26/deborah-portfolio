@@ -39,3 +39,7 @@
     @include infoBoxDot(#cc5648);
   }
 }
+
+.gradient-card {
+  background: linear-gradient(180deg, #fff 90%, transparent 95%);
+}

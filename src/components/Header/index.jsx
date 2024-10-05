@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import { Button } from "@/components";
 import classNames from "classnames";
 import { useNavigate } from "react-router-dom";
-import { HOME_ROUTE } from "@/constants";
+import { HOME_ROUTE, ABOUT_ME_ROUTE } from "@/constants";
 
 const links = [
   { label: "Projects" },
-  { label: "About me" },
+  { label: "About me", to: ABOUT_ME_ROUTE },
   { label: "Resume" },
   { label: "Let's chat" },
 ];
@@ -52,7 +52,7 @@ const Header = ({ theme }) => {
         <img src={Deborah} alt="deborah-logo" className="h-full" />
       </div>
       <div className="hidden md:flex items-center gap-6">
-        {links.map(({ label }) => (
+        {links.map(({ label, to }) => (
           <button
             key={label}
             className={classNames(
@@ -61,6 +61,7 @@ const Header = ({ theme }) => {
                 "md:hidden": label === "Let's chat",
               }
             )}
+            onClick={() => navigate(to)}
           >
             {label}
           </button>
@@ -138,8 +139,8 @@ const Header = ({ theme }) => {
         }}
       >
         <div className="bg-white m-4 p-4">
-          {links.map(({ label }, index) => (
-            <div
+          {links.map(({ label, to }, index) => (
+            <button
               key={index}
               className={classNames(
                 "py-3 cursor-pointer hover:text-blue-400 hover:font-bold transition-all",
@@ -148,9 +149,10 @@ const Header = ({ theme }) => {
                     index + 1 !== links.length,
                 }
               )}
+              onClick={() => navigate(to)}
             >
               {label}
-            </div>
+            </button>
           ))}
         </div>
       </motion.div>

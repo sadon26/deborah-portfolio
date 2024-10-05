@@ -29,6 +29,14 @@ body {
   }
 }
 
+.bg-light-yellow-layout-bg {
+  background: linear-gradient(-180deg, #f7f2ed 30%, #fff 70%);
+
+  &.important {
+    background: linear-gradient(180deg, #f7f2ed 30%, #fff 70%) !important;
+  }
+}
+
 .animated-div {
   transform: translateY(100%);
   // opacity: 0;
