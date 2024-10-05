@@ -12,8 +12,6 @@ import {
   PayrepLogoWithText,
   PayrepPhoneMockup,
   PayrepPhoneMockupTwo,
-} from "@/assets/svg";
-import {
   PainPoints,
   PayrepPrevEight,
   PayrepPrevFive,
@@ -25,7 +23,11 @@ import {
   PayrepPrevTen,
   PayrepPrevThree,
   PayrepPrevTwo,
-} from "../../../assets/svg";
+  CrownIcon,
+} from "@/assets/svg";
+import { designStrategies } from "@/utils";
+import { DesignStrategy } from "@/components";
+import { DeborahImage } from "../../../assets/img";
 
 const Payrep = () => {
   return (
@@ -201,7 +203,7 @@ const Payrep = () => {
         </div>
 
         <div className="px-4 md:px-20 py-12 md:py-[124px]">
-          <div className="flex  md:justify-end">
+          <div className="flex md:justify-end">
             <div
               style={{
                 borderTopLeftRadius: "64px",
@@ -354,6 +356,83 @@ const Payrep = () => {
                   the same problems repeatedly.
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-dark p-4 md:p-20">
+          <h6 className="text-[24px] md:text-[48px] text-white mb-8">
+            My Design Strategy
+          </h6>
+
+          <div className="grid grid-cols-4 md:grid-cols-12 gap-6">
+            {designStrategies.map((strategy) => (
+              <div
+                key={strategy.step}
+                className="col-span-4 sm:col-span-2 md:col-span-4"
+              >
+                <DesignStrategy strategy={strategy} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 py-12 md:py-[124px]">
+          <div className="flex md:justify-start">
+            <div
+              style={{
+                borderTopLeftRadius: "64px",
+              }}
+              className="w-full mb-2 md:mb-10 md:w-auto text-[18px] rounded-r-[100px] bg-header-two text-white pl-6 py-2 md:py-4 md:pr-[247px] font-bold md:text-[48px]"
+            >
+              How Might We?
+            </div>
+          </div>
+          <ul className="py-2 list-disc pl-4 text-primary flex flex-col gap-2">
+            <li>
+              How might we ensure consistent use of brand colors throughout the
+              app's interface to reinforce brand identity and improve user
+              recognition?
+            </li>
+            <li>
+              How might we redesign the app's interaction patterns to make
+              navigation more intuitive and reduce user frustration?
+            </li>
+            <li>
+              How might we streamline communication channels with customer
+              support to make it easier for users to seek assistance and resolve
+              issues?
+            </li>
+            <li>
+              How might we identify and prioritize user-reported complaints to
+              address recurring issues and improve overall user satisfaction?
+            </li>
+            <li>
+              How might we integrate user feedback mechanisms into the app to
+              continuously monitor and improve the user experience based on
+              real-time user input?
+            </li>
+          </ul>
+        </div>
+
+        <div className="bg-dark py-8 px-[35px] md:px-[86px] md:py-[113px] flex flex-col md:flex-row items-center gap-8 md:gap-[172px]">
+          <div className="flex flex-col text-white items-center">
+            <h4 className="mb-4 md:mb-6 text-[18px] md:text-[24px]">
+              Tired of Ugly UI?
+            </h4>
+            <div className="md:max-w-[300px] max-w-[88px]">
+              <img src={CrownIcon} alt="crown-icon" className="w-full" />
+            </div>
+            <h5 className="text-[24px] md:text-[56px] mb-2 md:mb-6">
+              KEEP CALM
+            </h5>
+            <p className="text-[16px] md:text-[24px] text-[#D5D7D9]">
+              This is where Deborah shows her magic skills
+            </p>
+          </div>
+          <div>
+            <div className="bg-white rounded-[50%] overflow-hidden">
+              <img src={DeborahImage} alt="deborah-image" />
             </div>
           </div>
         </div>

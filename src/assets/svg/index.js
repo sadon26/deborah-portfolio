@@ -70,6 +70,7 @@ import PayrepPrevEight from "../svg/payrep-prev-8.svg";
 import PayrepPrevNine from "../svg/payrep-prev-9.svg";
 import PayrepPrevTen from "../svg/payrep-prev-10.svg";
 import PainPoints from "../svg/pain-points.svg";
+import CrownIcon from "../svg/crown.svg";
 
 export {
   Deborah,
@@ -144,4 +145,5 @@ export {
   PayrepPrevNine,
   PayrepPrevTen,
   PainPoints,
+  CrownIcon,
 };
