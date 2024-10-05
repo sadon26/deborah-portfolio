@@ -9,7 +9,7 @@ const AboutMe = () => {
   return (
     <HomePageLayout className="bg-light-yellow-layout-bg important">
       <div className="pt-[57px] md:pt-[89px]">
-        <div className="px-4 md:px-20 md:py-[64px] md:mb-[88px] mb-6 flex flex-col md:flex-row gap-10 justify-between items-center">
+        <div className="px-4 lg:px-20 lg:py-[64px] lg:mb-[88px] mb-6 flex flex-col lg:flex-row gap-10 justify-between items-center">
           <motion.div
             initial={{
               y: -100,
@@ -23,7 +23,7 @@ const AboutMe = () => {
               delay: 0.4,
               ease: "linear",
             }}
-            className="mt-[56px] md:mt-0"
+            className="mt-[56px] md:mt-0 px-20 md:px-0"
           >
             <img src={DeborahAvatarBig} alt="deborah-avatar" />
           </motion.div>
@@ -38,7 +38,7 @@ const AboutMe = () => {
               delay: 0.4,
               ease: "linear",
             }}
-            className="md:w-[1px] w-full h-[1px] bg-[#BABDC0] md:h-[500px]"
+            className="lg:w-[1px] w-full h-[1px] bg-[#BABDC0] lg:h-[500px]"
           ></motion.div>
           <motion.div
             initial={{
@@ -53,10 +53,10 @@ const AboutMe = () => {
               delay: 0.4,
               ease: "linear",
             }}
-            className="md:w-[50%] gradient-card md:py-8 p-6 md:px-12 rounded-[8px]"
+            className="lg:w-[50%] gradient-card lg:py-8 p-6 lg:px-12 rounded-[8px]"
           >
             <div className="mb-4">
-              <h4 className="md:text-[24px] font-bold mb-1 md:mb-2">
+              <h4 className="lg:text-[24px] font-bold mb-1 lg:mb-2">
                 About Deborah
               </h4>
               <p className="text-secondary text-[18px]">Product designer</p>
