@@ -56,7 +56,7 @@ const Header = ({ theme }) => {
           <button
             key={label}
             className={classNames(
-              "text-[18px] hover:text-primary-base transition-all duration-300",
+              "text-[18px] hover:text-primary-base transition-all duration-300 inline-block",
               {
                 "md:hidden": label === "Let's chat",
               }
@@ -143,7 +143,7 @@ const Header = ({ theme }) => {
             <button
               key={index}
               className={classNames(
-                "py-3 cursor-pointer hover:text-blue-400 hover:font-bold transition-all",
+                "py-3 cursor-pointer hover:text-blue-400 hover:font-bold transition-all w-full block",
                 {
                   "border-b-[1px] border-neutral-100":
                     index + 1 !== links.length,
