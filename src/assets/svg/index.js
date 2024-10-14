@@ -71,6 +71,15 @@ import PayrepPrevNine from "../svg/payrep-prev-9.svg";
 import PayrepPrevTen from "../svg/payrep-prev-10.svg";
 import PainPoints from "../svg/pain-points.svg";
 import CrownIcon from "../svg/crown.svg";
+import LowFidelityPayrep from "../svg/low-fidelity-payrep.svg";
+import LowFidelityPayrepMobile from "../svg/low-fidelity-payrep-mobile.svg";
+import PayrepOnboardingScreens from "../svg/payrep-onboarding-screens.svg";
+import BillsPayrep from "../svg/bills-payrep.svg";
+import GettingStartedPayrep from "../svg/getting-started-payrep.svg";
+import NetworkPayrep from "../svg/network-payrep.svg";
+import SavingsPayrep from "../svg/savings-payrep.svg";
+import TerminalPayrep from "../svg/terminal-payrep.svg";
+import CarmedisMore from "../svg/carmedis-more.svg";
 
 export {
   Deborah,
@@ -146,4 +155,13 @@ export {
   PayrepPrevTen,
   PainPoints,
   CrownIcon,
+  LowFidelityPayrep,
+  LowFidelityPayrepMobile,
+  PayrepOnboardingScreens,
+  BillsPayrep,
+  GettingStartedPayrep,
+  NetworkPayrep,
+  SavingsPayrep,
+  TerminalPayrep,
+  CarmedisMore,
 };

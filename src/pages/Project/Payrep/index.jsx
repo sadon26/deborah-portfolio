@@ -28,8 +28,29 @@ import {
 import { designStrategies } from "@/utils";
 import { DesignStrategy } from "@/components";
 import { DeborahImage } from "../../../assets/img";
+import {
+  BillsPayrep,
+  CarmedisMore,
+  ClearlineMore,
+  DeborahAvatarBig,
+  GettingStartedPayrep,
+  LowFidelityPayrep,
+  LowFidelityPayrepMobile,
+  NetworkPayrep,
+  PayrepMore,
+  PayrepOnboardingScreens,
+  RightArrow,
+  RightArrowBlue,
+  SavingsPayrep,
+  TerminalPayrep,
+} from "../../../assets/svg";
+import { useNavigate } from "react-router-dom";
+import LetsWorkTogether from "../../Home/LetsWorkTogether";
+import { MyDesignFlair } from "../../Home/MyDesignFlair";
 
 const Payrep = () => {
+  const navigate = useNavigate();
+
   return (
     <motion.div
       initial={{
@@ -433,6 +454,292 @@ const Payrep = () => {
           <div>
             <div className="bg-white rounded-[50%] overflow-hidden">
               <img src={DeborahImage} alt="deborah-image" />
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 py-12 md:py-[124px]">
+          <div className="flex md:justify-end">
+            <div
+              style={{
+                borderTopLeftRadius: "64px",
+              }}
+              className="w-full mb-2 md:mb-10 md:w-auto text-[18px] rounded-r-[100px] bg-header-two text-white pl-6 py-2 md:py-4 md:pr-[247px] font-bold md:text-[48px]"
+            >
+              Low Fidelity Wireframes
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center md:gap-10 gap-8">
+            <div className="flex-grow w-full">
+              <img
+                className="hidden md:flex w-full"
+                src={LowFidelityPayrep}
+                alt="low-fidelity-payrep"
+              />
+              <img
+                className="md:hidden flex w-full"
+                src={LowFidelityPayrepMobile}
+                alt="low-fidelity-payrep"
+              />
+            </div>
+            <p className="order-[-1] md:order-1 md:w-[30%] shrink-0">
+              I developed low-fidelity wireframes for the primary screens,
+              incorporating solutions identified during the design exploration
+              phase. These low-fidelity wireframes served as a reference as I
+              progressed from low-fidelity to high-fidelity designs.
+            </p>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 pb-12 md:pb-[124px]">
+          <div className="flex">
+            <div
+              style={{
+                borderTopLeftRadius: "64px",
+              }}
+              className="w-full mb-2 md:mb-10 md:w-auto text-[18px] rounded-r-[100px] bg-header-two text-white pl-6 py-2 md:py-4 md:pr-[247px] font-bold md:text-[48px]"
+            >
+              Onboarding Screens
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center md:gap-10 gap-8">
+            <p className="md:w-[30%] shrink-0">
+              The onboarding process introduces users to an elegant interface,
+              ensuring seamless and secure transactions. It provides a
+              comprehensive overview of available features and functionalities.
+              Additionally, users have access to a dedicated support team
+              available around the clock to address any inquiries or concerns.
+            </p>
+            <div className="flex-grow w-full">
+              <img
+                className="w-full"
+                src={PayrepOnboardingScreens}
+                alt="payrep-onboarding-screens"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 pb-12 md:pb-[124px]">
+          <div className="flex md:justify-end">
+            <div
+              style={{
+                borderTopLeftRadius: "64px",
+              }}
+              className="w-full mb-2 md:mb-10 md:w-auto text-[18px] rounded-r-[100px] bg-header-two text-white pl-6 py-2 md:py-4 md:pr-[247px] font-bold md:text-[48px]"
+            >
+              Getting Started
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center md:gap-10 gap-8">
+            <p className="order-[-1] md:order-1 md:w-[30%] shrink-0">
+              Users can log in or sign up to create an account by providing the
+              necessary details. During registration, they can enable Face ID
+              for easier access and will be notified to register any new devices
+              for added security. If needed, users can recover their password
+              using the password recovery feature.
+            </p>
+            <div className="flex-grow w-full">
+              <img
+                className="w-full"
+                src={GettingStartedPayrep}
+                alt="payrep-getting-started"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 pb-12 md:pb-[124px]">
+          <div className="flex">
+            <div
+              style={{
+                borderTopLeftRadius: "64px",
+              }}
+              className="w-full mb-2 md:mb-10 md:w-auto text-[18px] rounded-r-[100px] bg-header-two text-white pl-6 py-2 md:py-4 md:pr-[247px] font-bold md:text-[48px]"
+            >
+              Bills
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center md:gap-10 gap-8">
+            <p className="md:w-[40%] shrink-0">
+              Users can easily manage and pay for various services, including
+              Cable TV, Utility Bills, Water Bills, Airtime, and Data, all
+              through a streamlined, secure interface. The app allows them to
+              quickly top-up airtime by entering a phone number, selecting the
+              amount, and choosing a network provider. With a clear,
+              user-friendly layout, they can also keep track of balances and
+              view transaction history, ensuring a smooth and efficient
+              experience for managing everyday payments.
+            </p>
+            <div className="flex-grow w-full md:pr-24">
+              <img className="w-full" src={BillsPayrep} alt="payrep-bills" />
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 pb-12 md:pb-[124px]">
+          <div className="flex md:justify-end">
+            <div
+              style={{
+                borderTopLeftRadius: "64px",
+              }}
+              className="w-full mb-2 md:mb-10 md:w-auto text-[18px] rounded-r-[100px] bg-header-two text-white pl-6 py-2 md:py-4 md:pr-[247px] font-bold md:text-[48px]"
+            >
+              Network
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center md:gap-10 gap-8">
+            <p className="order-[-1] md:order-1 md:w-[30%] shrink-0">
+              Users can view real-time network statuses for Bank Transfer, Card
+              Payment, Airtime/Data, and Bills Payment. Each bank's performance
+              is shown with percentage indicators, color-coded circles, and
+              emojis, helping users quickly assess network stability. For Card
+              Payments, users can check reliability across different card types
+              (Mastercard, Verve, Visa) to choose the best option.
+            </p>
+            <div className="flex-grow w-full">
+              <img
+                className="w-full"
+                src={NetworkPayrep}
+                alt="payrep-network"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 pb-12 md:pb-[124px]">
+          <div className="flex">
+            <div
+              style={{
+                borderTopLeftRadius: "64px",
+              }}
+              className="w-full mb-2 md:mb-10 md:w-auto text-[18px] rounded-r-[100px] bg-header-two text-white pl-6 py-2 md:py-4 md:pr-[247px] font-bold md:text-[48px]"
+            >
+              Savings
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center md:gap-10 gap-8">
+            <p className="md:w-[40%] shrink-0">
+              Users can manage their savings through three plans: Easy Savings
+              for setting personal goals with 13% annual interest, Automated
+              Savings for scheduling regular deductions (daily, weekly,
+              monthly), and Locked Savings for saving a fixed amount with
+              restricted withdrawals until the end of the lock period. In all
+              plans, users define the amount, frequency, and funding source, and
+              automate their savings with a single tap.
+            </p>
+            <div className="flex-grow w-full md:pr-24">
+              <img
+                className="w-full"
+                src={SavingsPayrep}
+                alt="savings-payrep"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 pb-12 md:pb-[124px]">
+          <div className="flex md:justify-end">
+            <div
+              style={{
+                borderTopLeftRadius: "64px",
+              }}
+              className="w-full mb-2 md:mb-10 md:w-auto text-[18px] rounded-r-[100px] bg-header-two text-white pl-6 py-2 md:py-4 md:pr-[247px] font-bold md:text-[48px]"
+            >
+              Terminal
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center md:gap-10 gap-8">
+            <p className="order-[-1] md:order-1 md:w-[30%] shrink-0">
+              Users can easily upgrade their PayRep account by verifying their
+              identity using their NIN or BVN. The process is simple, with clear
+              instructions for retrieving the required details. Once verified,
+              the daily transaction limit increases to ₦5,000,000, and the app
+              provides instant confirmation.
+            </p>
+            <div className="flex-grow w-full">
+              <img
+                className="w-full"
+                src={TerminalPayrep}
+                alt="terminal-network"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 pb-12 md:pb-[124px]">
+          <h6 className="text-[24px] md:text-[40px] text-header-two mb-6 font-extrabold">
+            See More Projects
+          </h6>
+
+          <div
+            className="grid grid-cols-12 md:gap-9 gap-6"
+            onClick={() => navigate("/projects/clearline")}
+          >
+            <div className="col-span-full md:col-span-6 rounded-[16px] bg-blue-200 bg-opacity-15 p-4 md:p-10 hover:scale-[0.95] transition-all">
+              <div className="flex justify-center">
+                <img src={ClearlineMore} alt="clearline-more" />
+              </div>
+              <div className="bg-header-two rounded-[8px] mt-4 p-4 text-white group cursor-pointer">
+                <div className="flex items-center gap-2">
+                  <p className="text-blue-300">Previous Project</p>
+                  <div className="left-0 relative group-hover:left-[10px] transition-all ease-out duration-500">
+                    <img src={RightArrowBlue} alt="right-arrow" />
+                  </div>
+                </div>
+                <p className="font-semibold">
+                  Clearline - A health maintenance organization app
+                </p>
+              </div>
+            </div>
+            <div
+              className="col-span-full md:col-span-6 rounded-[16px] bg-[#0E4BA326] bg-opacity-15 p-4 md:p-10 hover:scale-[0.95] transition-all"
+              onClick={() => navigate("/projects/carmedis")}
+            >
+              <div className="flex justify-center">
+                <img src={CarmedisMore} alt="carmedis-more" />
+              </div>
+              <div className="bg-header-two rounded-[8px] mt-4 p-4 text-white group cursor-pointer">
+                <div className="flex items-center gap-2">
+                  <p className="text-blue-300">Previous Project</p>
+                  <div className="left-0 relative group-hover:left-[10px] transition-all ease-out duration-500">
+                    <img src={RightArrowBlue} alt="right-arrow" />
+                  </div>
+                </div>
+                <p className="font-semibold">
+                  Carmedis- A car owner and auto-shop app
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-20 pb-12 md:pb-[124px]">
+          <LetsWorkTogether />
+
+          <div className="grid grid-cols-6 md:grid-cols-12 gap-4">
+            <div className="col-span-6">
+              <MyDesignFlair />
+            </div>
+            <div className="col-span-6 p-4 md:px-6 md:py-[39.5px] rounded-[16px] border-[1px] border-gray-light flex items-center justify-between gap-4">
+              <div>
+                <h6 className="text-[18px] font-bold mb-2">About Deborah</h6>
+                <p>Meet the creative mind behind the screen</p>
+              </div>
+              <div className="w-[100px] md:w-[140px] h-[100px] md:h-[140px]">
+                <img
+                  src={DeborahAvatarBig}
+                  className="w-full h-full"
+                  alt="avatar-img"
+                />
+              </div>
             </div>
           </div>
         </div>

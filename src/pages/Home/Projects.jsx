@@ -71,7 +71,7 @@ const Projects = () => {
   return (
     <>
       {Object.entries(projects).map(([key, project]) => (
-        <div key={key} className="my-12 md:my-[124px]">
+        <div key={key} className="my-12 md:my-[124px]" id="projects">
           <Project {...project} />
         </div>
       ))}

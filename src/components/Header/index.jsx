@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { HOME_ROUTE, ABOUT_ME_ROUTE } from "@/constants";
 
 const links = [
-  { label: "Projects" },
+  { label: "Projects", href: "projects" },
   { label: "About me", to: ABOUT_ME_ROUTE },
   { label: "Resume" },
   { label: "Let's chat" },
@@ -52,20 +52,35 @@ const Header = ({ theme }) => {
         <img src={Deborah} alt="deborah-logo" className="h-full" />
       </div>
       <div className="hidden md:flex items-center gap-6">
-        {links.map(({ label, to }) => (
-          <button
-            key={label}
-            className={classNames(
-              "text-[18px] hover:text-primary-base transition-all duration-300 inline-block",
-              {
-                "md:hidden": label === "Let's chat",
-              }
-            )}
-            onClick={() => navigate(to)}
-          >
-            {label}
-          </button>
-        ))}
+        {links.map(({ label, to, href }) =>
+          href ? (
+            <a
+              key={label}
+              href={`#${href}`}
+              className={classNames(
+                "text-[18px] hover:text-primary-base transition-all duration-300 inline-block",
+                {
+                  "md:hidden": label === "Let's chat",
+                }
+              )}
+            >
+              {label}
+            </a>
+          ) : (
+            <button
+              key={label}
+              className={classNames(
+                "text-[18px] hover:text-primary-base transition-all duration-300 inline-block",
+                {
+                  "md:hidden": label === "Let's chat",
+                }
+              )}
+              onClick={() => navigate(to)}
+            >
+              {label}
+            </button>
+          )
+        )}
         <Button className="hidden md:inline-block">Let's chat</Button>
       </div>
       <button

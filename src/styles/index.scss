@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 .bg-blue-primary {
   background: linear-gradient(90deg, #3a3589 0%, #130b74 80%);
 }
