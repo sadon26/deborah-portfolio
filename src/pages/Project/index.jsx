@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { HomePageLayout } from "@/layouts";
 import Carmedis from "./Carmedis";
 import Payrep from "./Payrep";
+import Clearline from "./Clearline";
 
 const Project = () => {
   const location = useLocation();
@@ -19,6 +20,13 @@ const Project = () => {
         return {
           theme: "!bg-white",
           component: Payrep,
+          className: "bg-white important",
+        };
+
+      case "/projects/clearline":
+        return {
+          theme: "!bg-white",
+          component: Clearline,
           className: "bg-white important",
         };
 
