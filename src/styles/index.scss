@@ -6,6 +6,11 @@
 @import "animation";
 @import "components";
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   color: theme("colors.primary");
   line-height: 27px;

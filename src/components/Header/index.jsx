@@ -7,9 +7,15 @@ import { useNavigate } from "react-router-dom";
 import { HOME_ROUTE, ABOUT_ME_ROUTE, LETS_CHAT_ROUTE } from "@/constants";
 
 const links = [
-  { label: "Projects", href: "projects" },
+  { label: "Projects", to: `${HOME_ROUTE}#projects` },
   { label: "About me", to: ABOUT_ME_ROUTE },
-  { label: "Resume" },
+  {
+    label: "Resume",
+    href: "https://acrobat.adobe.com/id/urn:aaid:sc:EU:6a939e6f-6afa-4e1b-9457-d5b82baee0bd",
+    extras: {
+      target: "_blank",
+    },
+  },
   { label: "Let's chat", to: LETS_CHAT_ROUTE },
 ];
 
@@ -52,17 +58,18 @@ const Header = ({ theme }) => {
         <img src={Deborah} alt="deborah-logo" className="h-full" />
       </div>
       <div className="hidden md:flex items-center gap-6">
-        {links.map(({ label, to, href }) =>
+        {links.map(({ label, to, href, extras }) =>
           href ? (
             <a
               key={label}
-              href={`#${href}`}
+              href={`${href}`}
               className={classNames(
                 "text-[18px] hover:text-primary-base transition-all duration-300 inline-block",
                 {
                   "md:hidden": label === "Let's chat",
                 }
               )}
+              {...(extras ?? {})}
             >
               {label}
             </a>

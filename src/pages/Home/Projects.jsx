@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   CarmedisImage,
   ClearlineImage,
@@ -7,8 +7,19 @@ import {
 } from "../../assets/svg";
 import Project from "./Project";
 import { PROJECT_ROUTE } from "@/constants";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Projects = () => {
+  const location = useLocation();
+
+  if (location.hash) {
+    setTimeout(() => {
+      document
+        .getElementById(location.hash.slice(1))
+        .scrollIntoView({ behavior: "smooth" });
+    }, 1000);
+  }
+
   const projects = {
     featuredProjects: {
       title: "The good stuff",
