@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import { Button } from "@/components";
 import classNames from "classnames";
 import { useNavigate } from "react-router-dom";
-import { HOME_ROUTE, ABOUT_ME_ROUTE } from "@/constants";
+import { HOME_ROUTE, ABOUT_ME_ROUTE, LETS_CHAT_ROUTE } from "@/constants";
 
 const links = [
   { label: "Projects", href: "projects" },
   { label: "About me", to: ABOUT_ME_ROUTE },
   { label: "Resume" },
-  { label: "Let's chat" },
+  { label: "Let's chat", to: LETS_CHAT_ROUTE },
 ];
 
 const Header = ({ theme }) => {
@@ -81,7 +81,12 @@ const Header = ({ theme }) => {
             </button>
           )
         )}
-        <Button className="hidden md:inline-block">Let's chat</Button>
+        <Button
+          className="hidden md:inline-block"
+          onClick={() => navigate(LETS_CHAT_ROUTE)}
+        >
+          Let's chat
+        </Button>
       </div>
       <button
         className="md:hidden flex cursor-pointer"

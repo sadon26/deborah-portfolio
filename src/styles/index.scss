@@ -41,6 +41,14 @@ html {
   }
 }
 
+.bg-light-yellow-layout-bg {
+  background: linear-gradient(-180deg, #f9ebe9 30%, #fff 70%);
+
+  &.important {
+    background: linear-gradient(180deg, #f9ebe9 30%, #fff 70%) !important;
+  }
+}
+
 .animated-div {
   transform: translateY(100%);
   // opacity: 0;
@@ -50,4 +58,8 @@ html {
 .slide-up {
   transform: translateY(0);
   opacity: 1;
+}
+
+.bg-button-trans {
+  background: linear-gradient(-90deg, #012468cc 30%, #130b74d4 70%) !important;
 }

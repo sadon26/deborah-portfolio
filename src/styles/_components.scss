@@ -43,3 +43,20 @@
 .gradient-card {
   background: linear-gradient(180deg, #fff 90%, transparent 95%);
 }
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #babdc0;
+  outline: none;
+  width: 100%;
+}
+
+input {
+  height: 48px;
+}
+
+label {
+  display: block;
+}
