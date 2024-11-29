@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   CarmedisImage,
   ClearlineImage,
@@ -7,7 +7,7 @@ import {
 } from "../../assets/svg";
 import Project from "./Project";
 import { PROJECT_ROUTE } from "@/constants";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Projects = () => {
   const location = useLocation();
@@ -15,7 +15,7 @@ const Projects = () => {
   if (location.hash) {
     setTimeout(() => {
       document
-        .getElementById(location.hash.slice(1))
+        ?.getElementById(location.hash.slice(1))
         .scrollIntoView({ behavior: "smooth" });
     }, 1000);
   }

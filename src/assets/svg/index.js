@@ -80,6 +80,7 @@ import NetworkPayrep from "../svg/network-payrep.svg";
 import SavingsPayrep from "../svg/savings-payrep.svg";
 import TerminalPayrep from "../svg/terminal-payrep.svg";
 import CarmedisMore from "../svg/carmedis-more.svg";
+import ClearlineIcon from "../svg/clearline-icon.svg";
 
 export {
   Deborah,
@@ -164,4 +165,5 @@ export {
   SavingsPayrep,
   TerminalPayrep,
   CarmedisMore,
+  ClearlineIcon,
 };

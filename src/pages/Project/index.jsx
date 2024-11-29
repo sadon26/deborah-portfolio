@@ -25,9 +25,9 @@ const Project = () => {
 
       case "/projects/clearline":
         return {
-          theme: "!bg-white",
+          theme: "!bg-[#E1E9F4] bg-opacity-30",
           component: Clearline,
-          className: "bg-white important",
+          className: "bg-blue-layout-bg important",
         };
 
       default:
