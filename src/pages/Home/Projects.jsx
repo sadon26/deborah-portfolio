@@ -71,11 +71,12 @@ const Projects = () => {
           title: "FAIA BRAVA",
           description: `Faia Brava is a Non-Governmental Environmental Organization (NGO) known for being the first to establish Private Protected Areas in Portugal, creating safe havens for nature. Their focus is on sustainability and caring for the land. `,
           wrapperClassName:
-            "bg-[#E7ECE1] flex flex-col md:flex-row justify-between gap-4 md:gap-10 rounded-[24px] p-6 md:p-16 items-center",
+            "bg-[#E7ECE1] border-[1px] border-transparent hover:border-[#618138] flex flex-col md:flex-row justify-between gap-4 md:gap-10 rounded-[24px] p-6 md:p-16 items-center",
           imageClassName: "basis-[55%] shrink-0",
           textClassName: "flex flex-col gap-1 md:gap-4",
           src: FaiaBravaImage,
-          buttonClassName: "border-[#618138] text-[#618138]",
+          buttonClassName:
+            "border-[#618138] !text-[#618138] hover:!text-white hover:bg-[#618138] bg-transparent",
           buttonText: "Coming Soon",
         },
       ],

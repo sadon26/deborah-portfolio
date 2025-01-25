@@ -33,7 +33,9 @@ const Project = ({ projects, title, description }) => {
         ref={(el) => intersectionRefs.current.push(el)}
         className="flex flex-col gap-1 md:gap-4 justify-center sticky top-12 md:top-20 items-center mb-8 p-4"
       >
-        <h5 className="text-secondary text-[14px] md:text-[24px]">{title}</h5>
+        <h5 className="text-secondary text-[14px] md:text-[24px] font-extralight">
+          {title}
+        </h5>
         <p className="text-heading text-[24px] md:text-[48px]">{description}</p>
       </div>
 
