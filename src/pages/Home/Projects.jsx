@@ -54,7 +54,7 @@ const Projects = () => {
           description: `Clearline International Limited (HMO) is a limited liability company, incorporated in January 1994 and duly registered with National Health Insurance Scheme (NHIS) to underwrite health insurance in Nigeria.`,
           wrapperClassName:
             "bg-[#D7EBF5] border-[1px] border-transparent hover:border-[#018BE9] flex flex-col md:flex-row justify-between gap-4 md:gap-10 rounded-[24px] p-6 md:p-16 items-center",
-          imageClassName: "basis-[55%] shrink-0 md:order-[-1]",
+          imageClassName: "basis-[55%] shrink-0",
           textClassName: "flex flex-col gap-1 md:gap-4",
           src: ClearlineImage,
           buttonClassName:
