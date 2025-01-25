@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { HomePageLayout } from "@/layouts";
-import DeborahAvatarBig from "@/assets/img/deborah-frame.png";
+import { DeborahAvatarBig } from "@/assets/svg";
 import { slideInFromLeft, designStrategies } from "@/utils";
 import { motion } from "framer-motion";
 import Projects from "./Projects";
