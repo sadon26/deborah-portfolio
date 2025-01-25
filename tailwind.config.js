@@ -24,9 +24,9 @@ export default {
         },
         heading: "#14181A",
         neutral: {
-          "-50": "#E4E6E7",
           "-100": "#D5D7D9",
         },
+        "neutral-50": "#E4E6E7",
         blue: {
           100: "#0E4BA3",
           200: "#018BE9",

@@ -41,7 +41,7 @@ const Header = ({ theme }) => {
   return (
     <motion.header
       className={classNames(
-        "fixed top-0 w-full z-[3] py-4 md:py-6 px-4 md:px-20 border-b-[1px] border-b-gray-light flex justify-between bg-yellow-light",
+        "fixed top-0 w-full z-[3] py-4 md:py-6 px-4 md:px-20 border-b-[1px] border-b-[#BABDC035] flex justify-between bg-yellow-light/30 backdrop-blur-md",
         [theme]
       )}
       initial={{ y: -90 }}
@@ -89,7 +89,7 @@ const Header = ({ theme }) => {
           )
         )}
         <Button
-          className="hidden md:inline-block"
+          className="hidden md:inline-block bg-button-trans"
           onClick={() => navigate(LETS_CHAT_ROUTE)}
         >
           Let's chat

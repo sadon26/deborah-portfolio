@@ -87,7 +87,9 @@ const LetsChat = () => {
                 onChange={handleChange}
               />
             </div>
-            <Button type="submit">Submit</Button>
+            <Button type="submit" className="bg-button-trans">
+              Submit
+            </Button>
           </form>
         </div>
       </motion.div>

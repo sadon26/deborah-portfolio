@@ -29,33 +29,36 @@ const Projects = () => {
           title: "CARMEDIS",
           description: `Carmedis is a platform that collaborates with company-owned and carefully vetted partner workshops to deliver high-quality, affordable auto care on a large scale in realtime.`,
           wrapperClassName:
-            "bg-[#D7DFE1] flex flex-col md:flex-row justify-between gap-4 md:gap-10 rounded-[24px] p-6 md:p-16 items-center",
+            "bg-[#D7DFE1] border-[1px] border-transparent hover:border-[#0E4BA3] flex flex-col md:flex-row justify-between gap-4 md:gap-10 rounded-[24px] p-6 md:p-16 items-center",
           imageClassName: "basis-[55%] shrink-0",
           textClassName: "flex flex-col gap-1 md:gap-4",
           src: CarmedisImage,
-          buttonClassName: "border-[#0E4BA3] text-[#0E4BA3]",
+          buttonClassName:
+            "border-[#0E4BA3] !text-[#0E4BA3] hover:!text-white hover:bg-[#0E4BA3] bg-transparent",
           to: PROJECT_ROUTE("carmedis"),
         },
         {
           title: "PAYREP",
           description: `An intuitive mobile app redesigned to satisfy user needs.`,
           wrapperClassName:
-            "bg-[#FBF1CE] flex flex-col md:flex-row justify-between gap-4 md:gap-10 rounded-[24px] p-6 md:p-16 items-center",
+            "bg-[#FBF1CE] border-[1px] border-transparent hover:border-[#FEB800] flex flex-col md:flex-row justify-between gap-4 md:gap-10 rounded-[24px] p-6 md:p-16 items-center",
           imageClassName: "basis-[55%] shrink-0",
           textClassName: "flex flex-col gap-1 md:gap-4 w-full",
           src: PayrepImage,
-          buttonClassName: "border-[#FEB800] text-[#FEB800]",
+          buttonClassName:
+            "border-yellow-light-100 !text-[#000] hover:!text-yellow-light-100 hover:bg-[#14181A] bg-transparent hover:border-heading",
           to: PROJECT_ROUTE("payrep"),
         },
         {
           title: "CLEARLINE",
           description: `Clearline International Limited (HMO) is a limited liability company, incorporated in January 1994 and duly registered with National Health Insurance Scheme (NHIS) to underwrite health insurance in Nigeria.`,
           wrapperClassName:
-            "bg-[#D7EBF5] flex flex-col md:flex-row justify-between gap-4 md:gap-10 rounded-[24px] p-6 md:p-16 items-center",
+            "bg-[#D7EBF5] border-[1px] border-transparent hover:border-[#018BE9] flex flex-col md:flex-row justify-between gap-4 md:gap-10 rounded-[24px] p-6 md:p-16 items-center",
           imageClassName: "basis-[55%] shrink-0 md:order-[-1]",
           textClassName: "flex flex-col gap-1 md:gap-4",
           src: ClearlineImage,
-          buttonClassName: "border-[#018BE9] text-[#018BE9]",
+          buttonClassName:
+            "border-[#018BE9] !text-[#018BE9] hover:!text-white hover:bg-[#018BE9] bg-transparent",
           to: PROJECT_ROUTE("clearline"),
         },
       ],

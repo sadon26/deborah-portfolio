@@ -69,7 +69,7 @@ const Project = ({ projects, title, description }) => {
                 <div className="hidden md:flex">
                   <Button
                     className={classNames(
-                      "rounded-[100px] bg-transparent border py-1 px-3",
+                      "rounded-[100px] border py-1 px-3",
                       buttonClassName
                     )}
                     onClick={() => navigate(to)}
@@ -83,7 +83,7 @@ const Project = ({ projects, title, description }) => {
                 <div className="md:hidden block">
                   <Button
                     className={classNames(
-                      "rounded-[100px] bg-transparent border py-1 px-3 w-full mt-8",
+                      "rounded-[100px] border py-1 px-3 w-full mt-8",
                       buttonClassName
                     )}
                     onClick={() => navigate(to)}

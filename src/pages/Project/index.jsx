@@ -12,27 +12,27 @@ const Project = () => {
     switch (location.pathname) {
       case "/projects/carmedis":
         return {
-          theme: "!bg-[#E1E9F4] bg-opacity-30",
+          theme: "!bg-[#E1E9F430] backdrop-blur-md",
           component: Carmedis,
           className: "bg-blue-layout-bg important",
         };
       case "/projects/payrep":
         return {
-          theme: "!bg-white",
+          theme: "!bg-white/30 backdrop-blur-md",
           component: Payrep,
           className: "bg-white important",
         };
 
       case "/projects/clearline":
         return {
-          theme: "!bg-[#E1E9F4] bg-opacity-30",
+          theme: "!bg-[#E1E9F430] backdrop-blur-md",
           component: Clearline,
           className: "bg-blue-layout-bg important",
         };
 
       default:
         return {
-          theme: "!bg-[#E1E9F4] bg-opacity-30",
+          theme: "!bg-[#E1E9F430] backdrop-blur-md",
           component: Carmedis,
           className: "bg-blue-layout-bg important",
         };
