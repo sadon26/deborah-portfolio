@@ -546,11 +546,11 @@ const Carmedis = () => {
               See More Projects
             </h6>
 
-            <div
-              className="grid grid-cols-12 md:gap-9 gap-6"
-              onClick={() => navigate("/projects/payrep")}
-            >
-              <div className="col-span-full md:col-span-6 rounded-[16px] bg-yellow-light-100 bg-opacity-15 p-4 md:p-10 hover:scale-[0.95] transition-all">
+            <div className="grid grid-cols-12 md:gap-9 gap-6">
+              <div
+                className="col-span-full md:col-span-6 rounded-[16px] bg-yellow-light-100 bg-opacity-15 p-4 md:p-10 hover:scale-[0.95] transition-all"
+                onClick={() => navigate("/projects/payrep")}
+              >
                 <div className="flex justify-center">
                   <img src={PayrepMore} alt="payrep-more" />
                 </div>

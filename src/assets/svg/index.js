@@ -81,6 +81,13 @@ import SavingsPayrep from "../svg/savings-payrep.svg";
 import TerminalPayrep from "../svg/terminal-payrep.svg";
 import CarmedisMore from "../svg/carmedis-more.svg";
 import ClearlineIcon from "../svg/clearline-icon.svg";
+import ClearlineUserResearch from "../svg/clearline-user-research.svg";
+import ClearlineUserPersona from "../svg/clearline-user-persona.svg";
+import ClearlineWireframe from "../svg/clearline-wireframe.svg";
+import ClearlineHighFidelity from "../svg/clearline-high-fidelity.svg";
+import ClearlineProvider from "../svg/clearline-provider.svg";
+import ClearlineAdmin from "../svg/clearline-admin.svg";
+import ClearlineEnrolee from "../svg/clearline-enrolee.svg";
 
 export {
   Deborah,
@@ -166,4 +173,11 @@ export {
   TerminalPayrep,
   CarmedisMore,
   ClearlineIcon,
+  ClearlineUserResearch,
+  ClearlineUserPersona,
+  ClearlineWireframe,
+  ClearlineHighFidelity,
+  ClearlineProvider,
+  ClearlineAdmin,
+  ClearlineEnrolee,
 };

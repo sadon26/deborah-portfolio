@@ -12,7 +12,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <footer className="px-4 md:px-20 py-6 md:py-[35px] flex flex-col gap-3 md:flex-row items-center justify-between bg-white z-[2] border-t-[1px]">
+    <footer className="px-4 md:px-20 py-6 md:py-[35px] flex flex-col gap-3 md:flex-row items-center justify-between bg-white z-[2] md:border-t-[1px]">
       <div
         className="h-6 md:h-8 cursor-pointer"
         onClick={() => navigate(HOME_ROUTE)}
